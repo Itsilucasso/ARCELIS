@@ -1,3 +1,10 @@
+:root {
+  --cor-verde-escuro: #004d40;
+  --cor-verde-claro: #e0f2f1;
+  --cor-btn-amarelo: #ffd600;
+  --cor-preto: #000000;
+}
+
 /* CSS RESET */
 body,
 img,
@@ -13,4 +20,128 @@ button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222222;
+    line-height: 1.6;
+    background-image: url(../assets/solarpanel01-1900.jpeg);
+    background-repeat: no-repeat;
+}
+
+.header {
+    background: var(--cor-verde-escuro);
+    padding: 0.5em;
+}
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu li {
+    display: inline;
+    margin-left: 1rem;
+}
+.menu__nav {
+    color: var(--cor-verde-claro);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.menu__nav:hover {
+  background-color: var(--cor-btn-amarelo);
+  padding: .5em;
+  color: var(--cor-verde-escuro);
+  border-radius: 5px;
+}
+
+.hero {
+    background: #00796b;
+    color: white;
+    text-align: center;
+    padding: 1.5em 1em;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    background: #ffd600;
+    color: #004d40;
+    padding: .8rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.servicos .grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.card {
+    background: #e0f2f1;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.sobre {
+  display: grid;
+  width: 60%;
+}
+
+.sobre p {
+    font-weight: 500;
+    color: var(--cor-preto);
+    font-size: 19px;
+}
+
+.contato {
+  display: grid;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 1em;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.contato button {
+    background: #004d40;
+    color: white;
+    padding: .8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.footer {
+    background: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }

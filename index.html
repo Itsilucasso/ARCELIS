@@ -8,7 +8,69 @@
     <title>EEC</title>
   </head>
   <body>
-    <header></header>
-    <footer></footer>
+    <header class="header">
+      <nav class="nav container">
+        <p class="logo">Soluções inteligentes para eficiência energética e sustentabilidade.</p>
+        <ul class="menu">
+          <li><a class="menu__nav" href="#servicos">Serviços</a></li>
+          <li><a class="menu__nav" href="#sobre">Sobre</a></li>
+          <li><a class="menu__nav" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Consultoria em Engenharia de Energia</h1>
+        <a href="#contato" class="btn">Fale Conosco</a>
+      </section>
+
+      <section id="servicos" class="servicos container">
+        <h2>Nossos Serviços</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Auditoria Energética <img src="./assets/management.png" alt=""></h3>
+            <p>
+              Diagnóstico de consumo e eficiência energética, com recomendações
+              práticas.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Projetos Sustentáveis <img src="./assets/save-the-planet.png" alt=""></h3>
+            <p>
+              Desenvolvimento de soluções que reduzem custos e impactos
+              ambientais.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Energia Renovável <img src="/assets/renewable-energy.png" alt=""></h3>
+            <p>
+              Estudos e implementação de sistemas solares, eólicos e híbridos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="sobre container">
+        <h2>Quem Somos</h2>
+        <p>
+          Somos uma empresa especializada em engenharia de energia. Trabalhamos
+          com eficiência energética, auditorias técnicas e soluções sustentáveis
+          para empresas de todos os portes.
+        </p>
+      </section>
+
+      <section id="contato" class="contato">
+        <h2>Entre em Contato</h2>
+        <form>
+          <input type="text" placeholder="Seu nome" required />
+          <input type="email" placeholder="Seu e-mail" required />
+          <textarea placeholder="Como podemos ajudar?" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© 2026 EEC. Todos os direitos reservados.</p>
+    </footer>
   </body>
 </html>
