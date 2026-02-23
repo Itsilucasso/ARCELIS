@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fontes/Montserrat-Regular.ttf);
+  font-display: swap;
+}
+
 :root {
   --cor-verde-escuro: #004d40;
   --cor-verde-claro: #e0f2f1;
@@ -16,73 +22,63 @@ label,
 input,
 select,
 textarea,
-button,
-ul,
-ol,
-li {
+button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #222222;
-    line-height: 1.6;
-    background-repeat: no-repeat;
-    font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  line-height: 1.6;
+  font-size: 20px;
 }
 
 .header {
-    background: var(--cor-verde-escuro);
-    padding: 1em;
-    position: relative;
-
+  display: block;
+  background: var(--cor-verde-escuro);
+  text-align: center;
 }
 
-.header p {
-    font-size: 30px;
-    color: var(--cor-verde-claro);
-}
-
-.nav .container {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    color: white;
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-decoration: none;
+.nav {
+  display: flex;
+  margin-left: 15%;
 }
 
 .menu {
-    display: flex;
-    gap: 2em;
+  display: flex;
+  gap: 2em;
 }
 
 .menu__nav {
-    color: var(--cor-verde-claro);
-    text-decoration: none;
-    font-weight: bold;
-    padding: .3em;
+  color: var(--cor-verde-claro);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.3em;
+  border: 1px solid var(--cor-btn-amarelo);
+  border-radius: 8px;
 }
 
 .menu__nav:hover {
   background-color: var(--cor-btn-amarelo);
-  padding: .3em;
+  padding: 0.3em;
   color: var(--cor-verde-escuro);
   border-radius: 5px;
 }
 
+.header p {
+  font-size: 30px;
+  color: var(--cor-verde-claro);
+}
+
 .hero {
-    color: white;
-    text-align: center;
-    padding: 1.5em 1em;
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+  color: white;
+  text-align: center;
+  padding: 1.5em 1em;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .video-bg {
@@ -107,70 +103,21 @@ h1 {
 }
 
 h2 {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 h3 {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .hero .btn {
-    background: #ffd600;
-    color: #004d40;
-    padding: .8rem 1.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 1rem;
-}
-
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.card {
-    background: #e0f2f1;
-    padding: 1.5rem;
-    border-radius: 8px;
-}
-
-.card img {
-    margin-left: .5em;
-}
-
-.servicos__li {
-    display: grid;
-    margin-top: 2em;
-    color: var(--cor-preto);
-    background-color: transparent;
-    font-size: 20px;
-    text-align: center;
-}
-
-li {
-    display: flex;
-    gap: .5em;
-    margin-bottom: 1em;
-}
-
-.sobre {
-  display: grid;
-  width: 60%;
-  position: relative;
-}
-
-.sobre p {
-    font-weight: 500;
-    color: var(--cor-preto);
-    min-height: 64px;
+  background: #ffd600;
+  color: #004d40;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 1rem;
 }
 
 .contato {
@@ -181,29 +128,29 @@ li {
 input[type="text"],
 input[type="email"],
 textarea {
-    padding: 1em;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 1em;
+  padding: 1em;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1em;
 }
 
 .contato button {
-    background: #004d40;
-    color: white;
-    padding: .8rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 1em;
-    font-size: 20px;
+  background: #004d40;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 1em;
+  font-size: 20px;
 }
 
 .footer {
-    background: #004d40;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    font-size: 10px;
+  background: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 10px;
 }
