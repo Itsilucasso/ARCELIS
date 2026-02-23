@@ -10,43 +10,125 @@
   <body>
     <header class="header">
       <nav class="nav container">
-        <p class="logo">Soluções inteligentes para eficiência energética e sustentabilidade.</p>
         <ul class="menu">
           <li><a class="menu__nav" href="#servicos">Serviços</a></li>
           <li><a class="menu__nav" href="#sobre">Sobre</a></li>
           <li><a class="menu__nav" href="#contato">Contato</a></li>
         </ul>
+        <p>
+          Consultoria em Engenharia de Energia
+        </p>
       </nav>
     </header>
     <main>
       <section class="hero">
-        <h1>Consultoria em Engenharia de Energia</h1>
-        <a href="#contato" class="btn">Fale Conosco</a>
+        <video autoplay muted loop playsinline poster="./assets/energyefi.jpeg" class="video-bg">
+    <source src="./assets/cinematic.mp4" type="video/mp4">
+  </video>
+        <div class="hero__content">
+          <h1 class="typewriter">Soluções inteligentes para eficiência energética</h1>
+          <a href="#contato" class="btn">Fale Conosco</a>
+        </div>
       </section>
 
       <section id="servicos" class="servicos container">
         <h2>Nossos Serviços</h2>
         <div class="grid">
           <div class="card">
-            <h3>Auditoria Energética <img src="./assets/management.png" alt=""></h3>
+            <h3>
+              Auditoria Energética
+              <img
+                src="./assets/management.png"
+                alt="icone de representação de auditoria"
+              />
+              <hr />
+            </h3>
             <p>
               Diagnóstico de consumo e eficiência energética, com recomendações
               práticas.
             </p>
           </div>
           <div class="card">
-            <h3>Projetos Sustentáveis <img src="./assets/save-the-planet.png" alt=""></h3>
+            <h3>
+              Projetos Sustentáveis
+              <img
+                src="./assets/save-the-planet.png"
+                alt="icone de representação de sustentabilidade"
+              />
+              <hr />
+            </h3>
             <p>
               Desenvolvimento de soluções que reduzem custos e impactos
               ambientais.
             </p>
           </div>
           <div class="card">
-            <h3>Energia Renovável <img src="/assets/renewable-energy.png" alt=""></h3>
+            <h3>
+              Energia Renovável
+              <img
+                src="/assets/renewable-energy.png"
+                alt="icone de representação de energias renováveis"
+              />
+              <hr />
+            </h3>
             <p>
               Estudos e implementação de sistemas solares, eólicos e híbridos.
             </p>
           </div>
+        </div>
+        <div class="card servicos__li">
+          <h2>Aqui você encontra:</h2>
+          <ul type="none">
+            <li>
+              <img
+                src="./assets/right.png"
+                alt="seta de paragrafo do item da li"
+              />
+              Redução dos custos com energia elétrica
+            </li>
+            <li>
+              <img
+                src="./assets/right.png"
+                alt="seta de paragrafo do item da li"
+              />
+              Melhoria da qualidade de vida
+            </li>
+            <li>
+              <img
+                src="./assets/right.png"
+                alt="seta de paragrafo do item da li"
+              />
+              Melhoria de conforto
+            </li>
+            <li>
+              <img
+                src="./assets/right.png"
+                alt="seta de paragrafo do item da li"
+              />
+              Aumento da vida útil dos equipamentos
+            </li>
+            <li>
+              <img
+                src="./assets/right.png"
+                alt="seta de paragrafo do item da li"
+              />
+              Modernização dos equipamentos
+            </li>
+            <li>
+              <img
+                src="./assets/right.png"
+                alt="seta de paragrafo do item da li"
+              />
+              Redução de custos com manutenção
+            </li>
+            <li>
+              <img
+                src="./assets/right.png"
+                alt="seta de paragrafo do item da li"
+              />
+              Desenvolvimento sustentável
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -62,9 +144,12 @@
       <section id="contato" class="contato">
         <h2>Entre em Contato</h2>
         <form>
-          <input type="text" placeholder="Seu nome" required />
-          <input type="email" placeholder="Seu e-mail" required />
-          <textarea placeholder="Como podemos ajudar?" required></textarea>
+          <label for="name">Nome</label>
+          <input id="name" name="userName" type="text" placeholder="Seu nome" required />
+          <label for="email">E-mail</label>
+          <input id="email" name="userEmail" type="email" placeholder="Seu e-mail" required />
+          <label for="service">Serviço</label>
+          <textarea id="service" name="userService" placeholder="Como podemos ajudar?" required></textarea>
           <button type="submit">Enviar</button>
         </form>
       </section>
@@ -72,5 +157,6 @@
     <footer class="footer">
       <p>© 2026 EEC. Todos os direitos reservados.</p>
     </footer>
+    <script src="js/main.js" defer></script>
   </body>
 </html>
