@@ -32,7 +32,7 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #222222;
   line-height: 1.6;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .header {
@@ -95,6 +95,58 @@ body {
   position: relative;
   z-index: 2;
   color: white;
+}
+
+.servicos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicos h2 {
+  text-align: center;
+}
+
+.servicos__container {
+  display: flex;
+  padding: 1rem;
+  width: 90%;
+  align-items: stretch;
+}
+
+.servicos__text {
+  flex: 1;
+  border: solid 2px var(--cor-verde-escuro);
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  padding: 1rem;
+  max-width: 30%;
+}
+
+.servicos__img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 0 10px 10px 0;
+}
+
+.servicos__img {
+  width: min(500px, 60%);
+}
+
+.servicos__container.reverse {
+  flex-direction: row-reverse;
+}
+
+.servicos__container.reverse .servicos__text {
+  border: 2px solid var(--cor-verde-escuro);
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+}
+
+.servicos__container.reverse .servicos__img img {
+  border-radius: 10px 0 0 10px;
 }
 
 h1 {
