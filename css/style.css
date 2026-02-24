@@ -5,7 +5,7 @@
 }
 
 :root {
-  --cor-verde-escuro: #3B8B7E;
+  --cor-verde-escuro: #3b8b7e;
   --cor-verde-claro: #e0f2f1;
   --cor-btn-amarelo: #ffd600;
   --cor-preto: #000000;
@@ -198,6 +198,24 @@ textarea {
   width: 100%;
   margin-bottom: 1em;
   font-size: 20px;
+}
+
+.whatsapp-btn {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.whatsapp-btn img {
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.whatsapp-btn img:hover {
+  transform: scale(1.2);
 }
 
 .footer {
