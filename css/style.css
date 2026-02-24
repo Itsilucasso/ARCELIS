@@ -5,7 +5,7 @@
 }
 
 :root {
-  --cor-verde-escuro: #004d40;
+  --cor-verde-escuro: #3B8B7E;
   --cor-verde-claro: #e0f2f1;
   --cor-btn-amarelo: #ffd600;
   --cor-preto: #000000;
@@ -33,6 +33,7 @@ body {
   color: #222222;
   line-height: 1.6;
   font-size: 16px;
+  background-color: var(--cor-verde-claro);
 }
 
 .header {
