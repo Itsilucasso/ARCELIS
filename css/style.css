@@ -80,7 +80,7 @@ header img {
 .menu__nav:hover {
   background-color: var(--cor-amarelo-primario);
   padding: 0.3em;
-  color: var(--cor-verde-escuro);
+  color: var(--cor-preto);
   border-radius: 5px;
 }
 
@@ -124,7 +124,7 @@ header img {
   margin-bottom: 5%;
   position: relative;
   border-radius: 10px;
-  box-shadow: 1px 3px var(--cor-amarelo-primario);
+  box-shadow: 5px 5px 15px 2px var(--cor-amarelo-primario);
 }
 
 .servicos__text {
@@ -148,15 +148,16 @@ header img {
   display: block;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 7px 8px 7px var(--cor-amarelo-primario);
+  box-shadow: 0px 0px 20px 5px var(--cor-amarelo-primario);
 }
 
 .servicos__img {
   width: min(500px, 60%);
 }
 
-.servicos__container.reverse {
+.servicos__container .reverse {
   flex-direction: row-reverse;
+  box-shadow: 5px 5px 15px 2px var(--cor-amarelo-primario);
 }
 
 .servicos__container.reverse .servicos__text {
@@ -174,11 +175,13 @@ h1 {
 
 h2 {
   font-size: 28px;
+  color: var(--cor-amarelo-primario);
 }
 
 h3 {
   font-size: 22px;
   font: bold;
+  color: var(--cor-amarelo-primario);
 }
 
 .hero__btn {
@@ -194,6 +197,10 @@ h3 {
 .sobre {
   display: block;
   text-align: center;
+}
+
+.sobre__img {
+  width: 100%;
 }
 
 .contato {
