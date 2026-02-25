@@ -1,3 +1,4 @@
+/* Transcrição de textos*/
 const elementos = document.querySelectorAll(".typewriter");
 
 const velocidadeEscrita = 60;
@@ -39,6 +40,7 @@ elementos.forEach((elemento) => {
     animar();
 });
 
+/* Animação de "revelação" dos elementos da página */
 const elements = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver((entries) => {

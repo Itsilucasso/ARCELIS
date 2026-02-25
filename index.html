@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Consultoria em Engenharia de Energia" />
+    <link rel="icon" href="/favicon-branco.svg">
     <link rel="stylesheet" href="./css/style.css" />
     <title>Arcelis</title>
   </head>
   <body>
-    <header class="header">
+    <header>
+      <div class="header">
+      <img
+        src="/assets/logo_completo_transparente.svg"
+        alt="Logo da empresa Arcelis"
+      />
       <nav class="nav">
         <ul type="none" class="menu">
           <li><a class="menu__nav" href="#servicos">Serviços</a></li>
@@ -16,7 +22,10 @@
           <li><a class="menu__nav" href="#contato">Contato</a></li>
         </ul>
       </nav>
-      <p>Consultoria em Engenharia de Energia</p>
+      </div>
+      <div class="header__phrase">
+        <p>Consultoria em Engenharia de Energia</p>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -72,7 +81,9 @@
             <p class="strong reveal">
               O resultado? Decisões baseadas em dados, redução de custos
               operacionais e aumento da competitividade do seu negócio.<br />
-              <strong class="reveal">Eficiência não é gasto. É estratégia.</strong>
+              <strong class="reveal"
+                >Eficiência não é gasto. É estratégia.</strong
+              >
             </p>
           </div>
           <div class="servicos__img reveal">
@@ -188,8 +199,21 @@
       </section>
 
       <section id="sobre" class="sobre">
-        <h2>Quem Somos</h2>
-        <p>...</p>
+        <h2><img src="/assets/arcelis.jpeg" alt="" />Quem Somos</h2>
+        <div class="sobre__grid">
+          <article class="card">
+            <h3>Missão</h3>
+            <p>...</p>
+          </article>
+          <article class="card">
+            <h3>Visão</h3>
+            <p>...</p>
+          </article>
+          <article class="card">
+            <h3>Valores</h3>
+            <p>...</p>
+          </article>
+        </div>
       </section>
 
       <section id="contato" class="contato">
@@ -211,7 +235,7 @@
             placeholder="Seu e-mail"
             required
           />
-          <label for="service">Serviço</label>
+          <label for="service">Solicitação</label>
           <textarea
             id="service"
             name="userService"

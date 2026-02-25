@@ -5,11 +5,11 @@
 }
 
 :root {
-  --cor-verde-primaria:#3BC1A8;
-  --cor-verde-secundaria:#249E94;
-  --cor-amarelo: #ffd600;
+  --cor-primaria: #ffffff;
+  --cor-secundaria: #000000;
+  --cor-amarelo-primario: #ffd600;
   --cor-preto: #000000;
-  --cor-branco: #FFFFFF;
+  --cor-branco: #ffffff;
 }
 
 /* CSS RESET */
@@ -31,16 +31,31 @@ button {
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: var(--cor-verde-secundaria);
+  color: var(--cor-branco);
   line-height: 1.6;
   font-size: 16px;
-  background-color: var(--cor-branco);
+  background-color: var(--cor-preto);
 }
 
 .header {
-  display: block;
-  background: var(--cor-verde-escuro);
+  display: flex;
+  background: var(--cor-branco);
   text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+}
+
+.header__phrase {
+  padding: 1rem;
+  font-weight: bold;
+  color: var(--cor-amarelo-primario);
+  text-align: center;
+  font-size: 20px;
+}
+
+header img {
+  width: 150px;
 }
 
 .nav {
@@ -54,24 +69,19 @@ body {
 }
 
 .menu__nav {
-  color: var(--cor-verde-secundaria);
+  color: var(--cor-preto);
   text-decoration: none;
   font-weight: bold;
   padding: 0.3em;
   border-radius: 8px;
-  box-shadow: 1px 3px var(--cor-amarelo);
+  box-shadow: 1px 3px var(--cor-amarelo-primario);
 }
 
 .menu__nav:hover {
-  background-color: var(--cor-amarelo);
+  background-color: var(--cor-amarelo-primario);
   padding: 0.3em;
   color: var(--cor-verde-escuro);
   border-radius: 5px;
-}
-
-.header p {
-  font-size: 30px;
-  font-weight: 800;
 }
 
 .hero {
@@ -114,16 +124,22 @@ body {
   margin-bottom: 5%;
   position: relative;
   border-radius: 10px;
-  box-shadow: 1px 3px var(--cor-amarelo);
+  box-shadow: 1px 3px var(--cor-amarelo-primario);
 }
 
 .servicos__text {
   flex: 1;
   padding: 1rem;
   max-width: 40%;
-  color: var(--cor-verde-secundaria);
-  font-weight: 700;
+  color: var(--cor-branco);
+  font-weight: 500;
   position: relative;
+  text-align: justify;
+}
+
+.servicos__text strong {
+  color: var(--cor-amarelo-primario);
+  font-weight: 950;
 }
 
 .servicos__img img {
@@ -132,16 +148,11 @@ body {
   display: block;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 7px 8px 7px var(--cor-amarelo);
+  box-shadow: 7px 8px 7px var(--cor-amarelo-primario);
 }
 
 .servicos__img {
   width: min(500px, 60%);
-  transition: transform 0.2s ease;
-}
-
-.servicos__img:hover {
-  transform: scale(1.1);
 }
 
 .servicos__container.reverse {
@@ -167,16 +178,22 @@ h2 {
 
 h3 {
   font-size: 22px;
+  font: bold;
 }
 
 .hero__btn {
-  background: var(--cor-amarelo);
-  color: var(--cor-verde-secundaria);
+  background: var(--cor-amarelo-primario);
+  color: var(--cor-preto);
   padding: 0.8rem 1.5rem;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
   margin-top: 1rem;
+}
+
+.sobre {
+  display: block;
+  text-align: center;
 }
 
 .contato {
@@ -195,8 +212,8 @@ textarea {
 }
 
 .contato button {
-  background: var(--cor-amarelo);
-  color: var(--cor-verde-secundaria);
+  background: var(--cor-amarelo-primario);
+  color: var(--cor-preto);
   padding: 0.8rem;
   border: none;
   border-radius: 5px;
@@ -225,8 +242,8 @@ textarea {
 }
 
 .footer {
-  background: #004d40;
-  color: white;
+  background: var(--cor-branco);
+  color: var(--cor-preto);
   text-align: center;
   padding: 1rem;
   font-size: 10px;
