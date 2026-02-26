@@ -47,10 +47,11 @@ body {
 }
 
 .header__phrase {
-  padding: 0 1rem 1rem 1rem;
   font-weight: bold;
-  color: var(--cor-preto);
+  color: var(--cor-branco);
   text-align: center;
+  background-color: var(--cor-preto);
+  padding-bottom: 1rem;
 }
 
 header img {
@@ -72,10 +73,9 @@ header img {
 .menu__nav {
   color: var(--cor-branco);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 300;
   padding: 0.3em;
   border-radius: 8px;
-  box-shadow: 2px 2px 10px var(--cor-amarelo-primario);
 }
 
 .menu__nav:hover {
@@ -83,6 +83,11 @@ header img {
   padding: 0.3em;
   color: var(--cor-preto);
   border-radius: 5px;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  font-size: 32px;
 }
 
 main {
@@ -117,10 +122,6 @@ section {
   align-items: center;
 }
 
-.servicos h2 {
-  text-align: center;
-}
-
 .servicos__container {
   display: flex;
   padding: 1rem;
@@ -128,7 +129,7 @@ section {
   gap: 2%;
   margin-bottom: 5%;
   border-radius: 8px;
-  box-shadow: 5px 5px 15px 2px var(--cor-amarelo-primario);
+  box-shadow: 5px 2px 20px 0px var(--cor-branco);
   justify-content: space-between;
 }
 
@@ -153,16 +154,15 @@ section {
   display: block;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 1px 0px 10px 2px var(--cor-amarelo-primario);
 }
 
 .servicos__img {
-  width: min(500px, 60%);
+  width: min(500px, 70%);
 }
 
 .servicos__container.reverse {
   flex-direction: row-reverse;
-  box-shadow: 5px 5px 15px 2px var(--cor-amarelo-primario);
+  box-shadow: 5px 2px 20px 0px var(--cor-amarelo-primario);
 }
 
 .servicos__container.reverse.servicos__text {
@@ -171,16 +171,6 @@ section {
 
 .servicos__container.reverse.servicos__img img {
   border-radius: 10px;
-}
-
-h1 {
-  margin-bottom: 0.5em;
-  font-size: 32px;
-}
-
-h2 {
-  font-size: 28px;
-  color: var(--cor-amarelo-primario);
 }
 
 h3 {
@@ -221,6 +211,7 @@ h3 {
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 textarea {
   padding: 1em;
   width: 100%;
