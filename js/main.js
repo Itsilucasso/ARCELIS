@@ -1,46 +1,24 @@
 /* Transcrição de textos*/
-const elementos = document.querySelectorAll(".typewriter");
+document.addEventListener("DOMContentLoaded", () => {
+  const elemento = document.querySelector(".typewriter");
+  if (!elemento) return;
 
-const velocidadeEscrita = 60;
-const velocidadeApagar = 40;
-const tempoEspera = 1200;
+  const textoOriginal = elemento.textContent.trim();
+  elemento.textContent = "";
 
-elementos.forEach((elemento) => {
+  let index = 0;
+  const velocidadeEscrita = 60;
 
-    const textoOriginal = elemento.textContent.trim();
-    elemento.textContent = "";
+  function animar() {
+    elemento.textContent = textoOriginal.slice(0, index + 1);
+    index++;
+    if (index < textoOriginal.length) setTimeout(animar, velocidadeEscrita);
+  }
 
-    let index = 0;
-    let apagando = false;
-
-    function animar() {
-
-        if (!apagando) {
-            if (index < textoOriginal.length) {
-                elemento.textContent += textoOriginal.charAt(index);
-                index++;
-                setTimeout(animar, velocidadeEscrita);
-            } else {
-                setTimeout(() => apagando = true, tempoEspera);
-                setTimeout(animar, tempoEspera);
-            }
-
-        } else {
-            if (index > 1) {
-                elemento.textContent = textoOriginal.substring(0, index - 1);
-                index--;
-                setTimeout(animar, velocidadeApagar);
-            } else {
-                apagando = false;
-                setTimeout(animar, 300);
-            }
-        }
-    }
-
-    animar();
+  animar();
 });
 
-/* Animação de "revelação" dos elementos da página */
+/* Animação de "reveal" dos elementos da página */
 const elements = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver((entries) => {
