@@ -46,16 +46,24 @@
           poster="./assets/energyefi.jpeg"
           class="video-bg"
         >
-          <source src="./assets/cinematic2.mp4" type="video/mp4" />
+          <!-- <source src="./assets/cinematic2.mp4" type="video/mp4" /> -->
           Seu navegador não suporta vídeo em HTML5
         </video>
       </section>
 
       <section id="servicos" class="servicos">
-        <h2 class="reveal">Nossos Serviços</h2>
-        <div class="servicos__container reverse reveal">
+        <h2 class="reveal typewriter">Nossos Serviços</h2>
+
+        <div class="servicos__container reveal">
+          <div class="servicos__title reveal">
+            <h3 class="title reveal">Diagnóstico Energético</h3>
+            <img
+              class="servicos__img"
+              src="./assets/diagnosis.jpg"
+              alt="Imagem de um técnico segurando um tablet indicando análises dentro de um galpão insdustrial"
+            />
+          </div>
           <div class="servicos__text reveal">
-            <h3 class="reveal">Diagnóstico Energético</h3>
             <p class="reveal">
               Você sabe exatamente onde sua empresa está perdendo energia — e
               dinheiro? O Diagnóstico Energético é o ponto de partida para
@@ -79,7 +87,9 @@
                 Propostas de ações de eficientização com viabilidade técnica e
                 econômica;
               </li>
-              <li>Priorização de medidas com maior impacto financeiro;</li>
+              <li class="reveal">
+                Priorização de medidas com maior impacto financeiro;
+              </li>
             </ul>
             <p class="strong reveal">
               O resultado? Decisões baseadas em dados, redução de custos
@@ -89,16 +99,18 @@
               >
             </p>
           </div>
-          <div class="servicos__img reveal">
+        </div>
+
+        <div class="servicos__container reveal">
+          <div class="servicos__title reveal">
+            <h3 class="title reveal">Energia Solar</h3>
             <img
-              src="./assets/diagnosis.jpg"
-              alt="Imagem de um técnico segurando um tablet indicando análises dentro de um galpão insdustrial"
+              class="servicos__img"
+              src="./assets/solar_panel.jpg"
+              alt="imagem com alguns painéis de energia solar sendo parafusados pelas mãos de um engenheiro com luvas"
             />
           </div>
-        </div>
-        <div class="servicos__container reveal">
           <div class="servicos__text reveal">
-            <h3 class="reveal">Energia Solar</h3>
             <p class="reveal">
               A energia solar é mais do que uma tendência — é uma decisão
               estratégica de redução de custos e independência energética. Na
@@ -119,16 +131,19 @@
               aquecimento de água.
             </p>
           </div>
-          <div class="servicos__img reveal">
+        </div>
+
+        <div class="servicos__container reveal">
+          <div class="servicos__title reveal">
+            <h3 class="title reveal">Sistemas de Armazenamento e Backup</h3>
             <img
-              src="./assets/solarpanel.jpg"
-              alt="imagem com alguns painéis de energia solar sendo parafusados pelas mãos de um engenheiro com luvas"
+              class="servicos__img"
+              src="./assets/datacenter.jpg"
+              alt="imagem de uma parte de uma sala com alguns data centers"
             />
           </div>
-        </div>
-        <div class="servicos__container reverse reveal">
+
           <div class="servicos__text reveal">
-            <h3 class="reveal">Sistemas de Armazenamento e Backup</h3>
             <p class="reveal">
               Energia estratégica é aquela que trabalha a favor do seu negócio —
               não contra ele. Desenvolvemos sistemas de armazenamento por
@@ -144,16 +159,18 @@
               e controle energético com engenharia aplicada e visão estratégica.
             </p>
           </div>
-          <div class="servicos__img reveal">
+        </div>
+
+        <div class="servicos__container reveal">
+          <div class="servicos__title reveal">
+            <h3 class="title reveal">Mobilidade Elétrica</h3>
             <img
-              src="./assets/datacenter.jpg"
-              alt="imagem de uma parte de uma sala com alguns data centers"
+              class="servicos__img"
+              src="./assets/elcharging.jpg"
+              alt="Carro elétrico com destaque na parte de trás sendo carregado em posto de abastecimento elétrico"
             />
           </div>
-        </div>
-        <div class="servicos__container reveal">
           <div class="servicos__text reveal">
-            <h3 class="reveal">Mobilidade Elétrica</h3>
             <p class="reveal">
               A mobilidade do futuro começa com infraestrutura inteligente.
               Desenvolvemos projetos completos de instalação de pontos de
@@ -170,16 +187,18 @@
               mobilidade elétrica.
             </p>
           </div>
-          <div class="servicos__img reveal">
+        </div>
+
+        <div class="servicos__container reveal">
+          <div class="servicos__title reveal">
+            <h3 class="title reveal">Iluminação</h3>
             <img
-              src="./assets/eletriccar2.jpg"
-              alt="Carro elétrico com destaque na parte de trás sendo carregado em posto de abastecimento elétrico"
+              class="servicos__img"
+              src="./assets/lightning.jpg"
+              alt="Sala moderna bem iluminada por fitas em LED"
             />
           </div>
-        </div>
-        <div class="servicos__container reverse reveal">
           <div class="servicos__text reveal">
-            <h3 class="reveal">Iluminação</h3>
             <p class="reveal">
               Iluminação eficiente não é apenas economia — é desempenho,
               segurança e valorização do ambiente. Na Arcelis, desenvolvemos
@@ -192,12 +211,6 @@
               instalada e perfil real de utilização do ambiente.
             </p>
           </div>
-          <div class="servicos__img reveal">
-            <img
-              src="./assets/lightning.jpg"
-              alt="Sala moderna bem iluminada por fitas em LED"
-            />
-          </div>
         </div>
       </section>
 
@@ -208,18 +221,36 @@
           src="/assets/arcelis00.jpg"
           alt="Imagem de um prédio em uma rua com o escritório da Arcelis no Térreo do prédio com um carro na frente"
         />
-        <div class="sobre__grid reveal">
+        <div class="sobre__card reveal">
           <article class="card reveal">
             <h3 class="reveal">Missão</h3>
-            <p class="reveal">...</p>
+            <img src="./assets/mission.png" alt="" />
+            <p class="reveal">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
           </article>
           <article class="card reveal">
             <h3 class="reveal">Visão</h3>
-            <p class="reveal">...</p>
+            <img src="/assets/vision.png" alt="" />
+            <p class="reveal">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
           </article>
           <article class="card reveal">
             <h3 class="reveal">Valores</h3>
-            <p class="reveal">...</p>
+            <img src="./assets/values.png" alt="" />
+            <p class="reveal">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
           </article>
         </div>
       </section>
