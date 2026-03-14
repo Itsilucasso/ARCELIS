@@ -1,0 +1,48 @@
+/*footer*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: var(--cor-verde);
+  color: var(--cor-branca);
+  font-size: 14px;
+  font-weight: 400;
+  border-top: 2px solid var(--cor-cobre);
+  text-align: center;
+  padding: 3rem 1.5rem;
+  gap: 1rem;
+}
+
+.footer__endereco {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.footer__contato {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.footer p img {
+  width: 32px;
+}
+
+.dev {
+  text-align: start;
+}
+
+.dev a{
+  text-decoration: none;
+  background: var(--gradiente-texto);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 18px;
+  font-weight: bold;
+}
+/*section footer*/

@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Consultoria em Engenharia de Energia" />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Arcelis</title>
+  </head>
+  <body>
+    <header class="header">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="./assets/headerbgposter.webp"
+        class="video-bg"
+      >
+        <source src="./assets/headermp4.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo em HTML5
+      </video>
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="./assets/headerbgposter.webp"
+        class="video-bg video720"
+      >
+        <source src="./assets/headerbg720.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo em HTML5
+      </video>
+      <div class="header__container">
+        <img
+          class="logo reveal"
+          src="./assets/logo_completo_transparente.svg"
+          alt="Logo da empresa Arcelis"
+        />
+        <div class="header__menu reveal">
+          <input type="checkbox" id="menu-hamburguer" />
+          <label for="menu-hamburguer" class="label__menu reveal"></label>
+          <nav class="nav">
+            <ul class="menu">
+              <li class="menu__li">
+                <a class="menu__nav" href="#servicos">
+                  <img
+                    src="./assets/project-manager.svg"
+                    alt="ícone com uma mão oferencendo uma engrenagem"
+                  />Serviços</a
+                >
+              </li>
+              <li class="menu__li">
+                <a class="menu__nav" href="#sobre"
+                  ><img
+                    src="./assets/badge.svg"
+                    alt="icone de identidade"
+                  />Sobre</a
+                >
+              </li>
+              <li class="menu__li">
+                <a class="menu__nav" href="#contato"
+                  ><img
+                    src="./assets/contact.svg"
+                    alt="icone de contato"
+                  />Contato</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__texto">
+        <h1 class="typewriter">
+          Soluções inteligentes para eficiência energética
+        </h1>
+        <p class="header__p reveal">
+          Engenharia aplicada para reduzir custos e otimizar consumo
+        </p>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://wa.me/556194060494?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20as%20consultorias."
+          class="header__btn reveal"
+          >Fale Conosco</a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="video">
+        <div class="video__texto">
+          <h2>
+            Projetos de eficiência energética, energia solar e mobilidade
+            elétrica.
+          </h2>
+          <a href="#contato">Solicitar diagnóstico</a>
+        </div>
+        <video class="video-player" controls>
+          <source src="./assets/videoEE.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeo.
+        </video>
+      </section>
+      <section id="servicos" class="servicos">
+        <h2 class="servicos__title reveal">Nossos Serviços</h2>
+
+        <div class="servicos__accordion">
+          <div class="servicos__grid">
+            <details class="servico__type" name="servicos__accordion" open>
+              <summary class="servico__head reveal">
+                Diagnóstico Energético<img
+                  class="servicos__icon reveal"
+                  src="./assets/diagnosisicon.svg"
+                  alt="Ícone de diagnóstico energético"
+                />
+              </summary>
+              <div class="servico__body">
+                <div class="servico__text reveal">
+                  <img
+                    class="servico__img-float reveal"
+                    src="./assets/img01.webp"
+                    alt="Técnico com tablet em galpão industrial"
+                  />
+                  <p>
+                    Você sabe exatamente onde sua empresa está perdendo energia
+                    — e dinheiro? O Diagnóstico Energético é o ponto de partida
+                    para transformar consumo em estratégia. Realizamos uma
+                    análise técnica detalhada do seu uso de energia, mapeando
+                    cargas, identificando desperdícios invisíveis e localizando
+                    oportunidades reais de otimização. Não se trata apenas de
+                    “reduzir a conta de luz”. Trata-se de compreender como a
+                    energia circula no seu processo produtivo, onde há
+                    ineficiências e quais ações geram maior retorno sobre
+                    investimento.
+                  </p>
+                  <p>Nossa consultoria entrega:</p>
+                  <ul>
+                    <li>
+                      Levantamento técnico completo do consumo energético;
+                    </li>
+                    <li>Identificação de gargalos e perdas ocultas;</li>
+                    <li>
+                      Propostas de ações de eficientização com viabilidade
+                      técnica e econômica;
+                    </li>
+                    <li>
+                      Priorização de medidas com maior impacto financeiro;
+                    </li>
+                  </ul>
+                  <p>
+                    O resultado? Decisões baseadas em dados, redução de custos
+                    operacionais e aumento da competitividade do seu negócio.<br />
+                    <span> Eficiência não é gasto. É estratégia.</span>
+                  </p>
+                </div>
+              </div>
+            </details>
+
+            <details class="servico__type" name="servicos__accordion">
+              <summary class="servico__head reveal">
+                Energia Solar<img
+                  class="servicos__icon reveal"
+                  src="./assets/solarp1.svg"
+                  alt="Ícone de diagnóstico energético"
+                />
+              </summary>
+              <div class="servico__body">
+                <div class="servico__text reveal">
+                  <img
+                    class="servico__img-float reveal"
+                    src="./assets/img02.webp"
+                    alt="Painéis solares sendo instalados"
+                  />
+                  <p>
+                    A energia solar é mais do que uma tendência — é uma decisão
+                    estratégica de redução de custos e independência energética.
+                    Na Arcelis, atuamos de forma completa no setor solar,
+                    oferecendo soluções técnicas seguras, eficientes e
+                    financeiramente inteligentes para cada necessidade. Projetos
+                    de Geração Fotovoltaica: Desenvolvemos projetos completos de
+                    geração de energia solar sob medida, com análise técnica
+                    detalhada, estudo de viabilidade econômica e dimensionamento
+                    preciso do sistema. Manutenção de Sistemas Fotovoltaicos: Um
+                    sistema solar mal mantido pode perder eficiência
+                    silenciosamente. Realizamos inspeções técnicas, diagnóstico
+                    de falhas, limpeza especializada, análise de desempenho e
+                    correções preventivas para garantir que sua usina opere no
+                    máximo potencial. Sistemas de Aquecimento Solar de Água:
+                    Projetamos e implementamos sistemas de aquecimento solar
+                    eficientes para aplicações residenciais, comerciais e
+                    industriais, reduzindo significativamente o consumo elétrico
+                    destinado ao aquecimento de água.
+                  </p>
+                </div>
+              </div>
+            </details>
+          </div>
+          <div class="servicos__grid">
+            <details class="servico__type" name="servicos__accordion">
+              <summary class="servico__head reveal">
+                Sistemas de Armazenamento e Backup
+                <img
+                  class="servicos__icon reveal"
+                  src="./assets/battery1.svg"
+                  alt="Ícone de bateria"
+                />
+              </summary>
+              <div class="servico__body">
+                <div class="servico__text reveal">
+                  <img
+                    class="servico__img-float reveal"
+                    src="./assets/img04.webp"
+                    alt="Data center"
+                  />
+                  <p>
+                    Energia estratégica é aquela que trabalha a favor do seu
+                    negócio — não contra ele. Desenvolvemos sistemas de
+                    armazenamento por baterias com foco na redução de demanda na
+                    ponta e no controle de picos ao longo do dia, permitindo
+                    maior previsibilidade de custos e otimização da estrutura
+                    tarifária. A energia pode ser armazenada nos momentos mais
+                    vantajosos e utilizada de forma inteligente quando a tarifa
+                    é mais elevada. Além disso, implementamos sistemas de backup
+                    e proteção, como nobreaks e soluções de continuidade
+                    energética, garantindo segurança para processos críticos,
+                    proteção de equipamentos sensíveis e operação ininterrupta
+                    mesmo em falhas da rede. Mais do que autonomia, entregamos
+                    estabilidade, economia e controle energético com engenharia
+                    aplicada e visão estratégica.
+                  </p>
+                </div>
+              </div>
+            </details>
+
+            <details class="servico__type" name="servicos__accordion">
+              <summary class="servico__head reveal">
+                Mobilidade Elétrica<img
+                  class="servicos__icon reveal"
+                  src="./assets/evcharging.svg"
+                  alt="Ícone de bateria"
+                />
+              </summary>
+              <div class="servico__body">
+                <div class="servico__text reveal">
+                  <img
+                    class="servico__img-float reveal"
+                    src="./assets/elcharging.jpg"
+                    alt="Carro elétrico carregando"
+                  />
+                  <p>
+                    A mobilidade do futuro começa com infraestrutura
+                    inteligente. Desenvolvemos projetos completos de instalação
+                    de pontos de recarga para veículos elétricos, atendendo
+                    desde soluções residenciais e corporativas com carregadores
+                    do tipo Wallbox, até projetos mais robustos, como
+                    eletropostos comerciais e frotas empresariais. Nossa atuação
+                    envolve análise da capacidade elétrica disponível, adequação
+                    de demanda, proteção do sistema, dimensionamento técnico e
+                    conformidade normativa — garantindo segurança, eficiência e
+                    escalabilidade. Seja para agregar valor ao seu imóvel,
+                    atender clientes, eletrificar sua frota ou posicionar sua
+                    empresa na nova economia energética, entregamos soluções
+                    estruturadas, confiáveis e preparadas para o crescimento da
+                    mobilidade elétrica.
+                  </p>
+                </div>
+              </div>
+            </details>
+          </div>
+          <div class="servico__iluminacao">
+            <details class="servico__type" name="servicos__accordion">
+              <summary class="servico__head reveal">
+                Iluminação<img
+                  class="servicos__icon reveal"
+                  src="./assets/led.svg"
+                  alt="Ícone de bateria"
+                />
+              </summary>
+              <div class="servico__body">
+                <div class="servico__text reveal">
+                  <img
+                    class="servico__img-float reveal"
+                    src="./assets/img05.webp"
+                    alt="Ambiente iluminado por LED"
+                  />
+                  <p>
+                    Iluminação eficiente não é apenas economia — é desempenho,
+                    segurança e valorização do ambiente. Na Arcelis,
+                    desenvolvemos projetos completos de modernização de sistemas
+                    de iluminação, substituindo tecnologias ineficientes por
+                    soluções de alto desempenho energético, maior durabilidade e
+                    melhor qualidade luminosa. Cada intervenção é precedida por
+                    análise técnica detalhada, considerando níveis adequados de
+                    iluminância, uniformidade, índice de reprodução de cor,
+                    demanda elétrica instalada e perfil real de utilização do
+                    ambiente.
+                  </p>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="sobre">
+        <div class="sobre__title">
+          <img
+            class="sobre__icon"
+            src="./assets/badge.svg"
+            alt="ícone de identidade relacionado à seção sobre"
+          />
+          <h2 class="reveal">Quem Somos</h2>
+        </div>
+        <div class="sobre__grid">
+          <div class="sobre__arcelis reveal">
+            <p>
+              A Arcelis é uma empresa especializada em ...Lorem Ipsum is simply
+              dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to
+              make a type specimen book.
+            </p>
+          </div>
+          <div class="values">
+            <article class="card reveal">
+              <div class="sobre__card-value">
+                <img
+                  class="sobre__icon"
+                  src="./assets/mission.svg"
+                  alt="icone de um target relacionado à missão"
+                />
+                <h3 class="reveal">Missão</h3>
+              </div>
+              <p class="reveal">
+                Projetar e executar soluções de eficiência energética com
+                responsabilidade técnica absoluta, garantindo decisões
+                fundamentadas, transparência nas estimativas e resultados que
+                realmente façam sentido para o cliente.
+              </p>
+            </article>
+            <hr />
+            <article class="card reveal">
+              <div class="sobre__card-value">
+                <img
+                  class="sobre__icon"
+                  src="./assets/vision.svg"
+                  alt="icone de uma mão segurando o planeta terra relacionado à visão"
+                />
+                <h3 class="reveal">Visão</h3>
+              </div>
+              <p class="reveal">
+                Tornar-se referência nacional em eficiência energética, elevando
+                o padrão técnico do setor e influenciando o mercado por meio de
+                engenharia responsável, precisão técnica e excelência
+                operacional.
+              </p>
+            </article>
+            <hr />
+            <article class="card reveal">
+              <div class="sobre__card-value">
+                <img
+                  class="values__img"
+                  src="./assets/valores.gif"
+                  alt="imagem enumerando os 5 valores da arcelis"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="contato">
+        <div class="contato__arcelis">
+          <h2>
+            <span class="contato__span">Pare de perder dinheiro</span> com a sua
+            fatura de energia e economize!
+          </h2>
+          <p>Entre em contato!</p>
+          <div class="contato__moldura">
+            <div class="contato__container-email">
+              <img
+                class="reveal"
+                src="./assets/email-file.gif"
+                alt="icone de e-mail"
+              />
+              <p class="contato__arcelis-email reveal">
+                contatoarcelis@arcelis.com.br
+              </p>
+            </div>
+            <div class="contato__container-wpp reveal">
+              <a
+                rel="noopener noreferrer"
+                href="https://wa.me/556194060494?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20as%20consultorias."
+                target="_blank"
+                ><img
+                  class="contato__moldura-wpp reveal"
+                  src="./assets/whatsapp_button_icon_.svg"
+                  alt="logo do whatsapp"
+              /></a>
+
+              <p class="contato__arcelis-wpp reveal">+55 61 9 9406-9404</p>
+            </div>
+          </div>
+        </div>
+        <div class="contato__form">
+          <h2>Deixe-nos entender a sua demanda:</h2>
+          <form
+            action="https://formsubmit.co/contatoilucasso@gmail.com"
+            method="post"
+            autocomplete="on"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Novo contato pelo site"
+            />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" style="display: none" />
+            <input type="hidden" name="_replyto" value="email" />
+            <label for="name">Nome</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Seu nome"
+              required
+            />
+            <label for="email">E-mail</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Seu e-mail"
+              required
+            />
+            <label for="phone">Telefone</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              pattern="[0-9]{11}"
+              placeholder="Seu telefone: 'DDD+99999-9999'"
+              required
+            />
+            <label for="service">Dúvida/Solicitação</label>
+            <textarea
+              id="service"
+              name="service"
+              placeholder="Como podemos ajudar?"
+              required
+            ></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div>
+        <p>© 2026 ARCELIS. Todos os direitos reservados.</p>
+        <p>All rights reserved.</p>
+      </div>
+      <div>
+        <p>Consultoria em engenharia de energia</p>
+        <p>
+          Serviços: • Diagnóstico energético • Energia fotovoltaica •
+          Armazenamento e backup de energia • Mobilidade elétrica • Iluminação
+        </p>
+      </div>
+      <div>
+        <p class="footer__endereco">
+          <img src="./assets/pin.svg" alt="ícone de localização" /> Brasil,
+          Brasília - Distrito Federal
+        </p>
+        <div>
+        <p class="footer__contato"><img src="./assets/e-mail.svg" alt="ícone de email">contato@arcelis.com</p>
+        <p class="footer__contato"><img src="./assets/phone.svg" alt="ícone de telefone">(61) 99406-0494</p>
+        </div>
+      </div>
+      <div class="dev">
+        <p>
+          Desenvolvido por
+          <a href="https://github.com/Itsilucasso">Lucas Santos</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+
+    <a
+      rel="noopener noreferrer"
+      href="https://wa.me/556194060494?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20as%20consultorias."
+      class="whatsapp-btn"
+      target="_blank"
+    >
+      <img src="./assets/whatsapp.svg" alt=" Botão para abrir o WhatsApp" />
+    </a>
+  </body>
+</html>

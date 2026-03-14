@@ -1,0 +1,159 @@
+/*section contato*/
+.contato {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contato__arcelis {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.contato h2 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.contato__span {
+  background: var(--gradiente-principal);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contato__moldura {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 300px;
+  padding: 1rem;
+  gap: 3rem;
+  background: url("../assets/molduractt.png") center / 100% 100% no-repeat;
+  box-sizing: border-box;
+}
+
+.contato__container-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato__container-email img {
+  max-width: 100px;
+  height: auto;
+}
+
+.contato__container-email p,
+.contato__container-wpp p {
+  font-size: 20px;
+  background: var(--gradiente-principal);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+}
+
+.contato__container-wpp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.contato__container-wpp img {
+  width: 200px;
+  height: auto;
+}
+
+.contato__form {
+  border-left: 1px solid var(--cor-cobre);
+  padding: 1rem;
+  background: var(--gradiente-background);
+}
+
+.contato__form label {
+  font-weight: 500;
+  color: var(--cor-grafite);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  border: 2px solid var(--cor-verde);
+  font-family: inherit;
+  box-shadow: 5px 5px 15px var(--cor-cobre);
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 80px;
+  width: 100%;
+  border: 2px solid var(--cor-verde);
+  padding: 1em;
+  border-radius: 5px;
+  font-family: inherit;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 15px var(--cor-cobre);
+  margin-bottom: 1em;
+}
+
+.contato button {
+  background: var(--cor-grafite);
+  color: var(--cor-branca);
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 1em;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contato button:hover {
+  background-color: var(--cor-verde);
+  transition: background 1s ease-in-out;
+}
+
+@media (max-width: 480px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+  .contato__form {
+    border-left: none;
+    border-top: 1px solid var(--cor-grafite);
+  }
+
+  .contato__container-email p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+  .contato__form {
+    border-left: none;
+    border-top: 1px solid var(--cor-grafite);
+  }
+}
+
+@media (max-width: 768px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+  .contato__form {
+    border-left: none;
+    border-top: 1px solid var(--cor-grafite);
+  }
+}
+/*section contato*/

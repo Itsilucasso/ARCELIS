@@ -1,0 +1,170 @@
+/*section sobre*/
+.sobre {
+  text-align: center;
+  background-image: url("../assets/arcelis2.png");
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  overflow: hidden;
+}
+
+.sobre h2 {
+  font-weight: 400;
+}
+
+.sobre__title {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.sobre__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  gap: 1rem;
+  place-items: center;
+  letter-spacing: 0.08em;
+  color: var(--cor-grafite);
+}
+
+.sobre__arcelis,
+.values {
+  width: 100%;
+  max-width: 700px;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+.values__img {
+  max-width: 700px;
+  border-radius: 8px;
+}
+
+.sobre__card-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 480px) {
+  hr {
+    display: block;
+    width: 80%;
+  }
+
+  .sobre {
+    background-size: 400px;
+    padding: 0.5rem;
+  }
+
+  .sobre__grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .sobre__arcelis,
+  .values {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .values__img {
+    width: 100%;
+    max-width: 460px;
+  }
+}
+
+@media (max-width: 600px) {
+  hr {
+    display: block;
+    width: 80%;
+  }
+
+  .sobre {
+    background-size: 400px;
+    padding: 0.5rem;
+  }
+
+  .sobre__grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .sobre__arcelis,
+  .values {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .values__img {
+    width: 100%;
+    max-width: 460px;
+  }
+}
+
+@media (max-width: 768px) {
+  hr {
+    display: block;
+    width: 80%;
+  }
+
+  .sobre {
+    background-size: 400px;
+    padding: 0.5rem;
+  }
+
+  .sobre__grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .sobre__arcelis,
+  .values {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .values__img {
+    width: 100%;
+    max-width: 460px;
+  }
+}
+
+@media (max-width: 1024px) {
+  hr {
+    display: block;
+    width: 80%;
+  }
+
+  .sobre {
+    background-size: 400px;
+    padding: 0.5rem;
+  }
+
+  .sobre__grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .sobre__arcelis,
+  .values {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .values__img {
+    width: 100%;
+    max-width: 460px;
+  }
+}
+/*section sobre*/

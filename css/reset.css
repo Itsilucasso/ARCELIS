@@ -1,0 +1,21 @@
+/*CSS RESET*/
+body,
+img,
+h1,
+p,
+fieldset,
+legend,
+label,
+input,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+/*CSS RESET*/

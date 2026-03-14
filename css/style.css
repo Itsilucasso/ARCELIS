@@ -1,0 +1,79 @@
+@import url("./reset.css");
+@import url("./header.css");
+@import url("./video.css");
+@import url("./servicos.css");
+@import url("./sobre.css");
+@import url("./contato.css");
+@import url("./footer.css");
+@import url("./js.css");
+
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fontes/Montserrat/Montserrat-VariableFont_wght.woff2");
+  font-display: swap;
+  font-weight: 100 900;
+}
+
+:root {
+  --cor-branca: #ffffff;
+  --cor-preta: #121212;
+  --cor-cobre: #c68346;
+  --cor-verde: #06402b;
+  --cor-grafite: #4a4a4a;
+  --gradiente-principal: linear-gradient(
+    90deg,
+    rgba(6, 64, 43, 1) 0%,
+    rgba(198, 131, 70, 1) 100%
+  );
+  --gradiente-texto: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(198, 131, 70, 1) 100%
+  );
+  --gradiente-background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(247, 237, 223, 1) 100%
+  );
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--cor-preta);
+  line-height: 1.6;
+  font-size: 1rem;
+  background-color: var(--cor-branca);
+  letter-spacing: 0.05em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  border-bottom: 1px solid var(--cor-cobre);
+}
+
+.whatsapp-btn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.whatsapp-btn img {
+  height: 100%;
+  transition: transform 0.1s ease;
+}
+
+.whatsapp-btn img:hover {
+  transform: scale(1.2);
+}
