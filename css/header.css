@@ -18,7 +18,7 @@
   z-index: 0;
 }
 
-.video720{
+.video720 {
   display: none;
 }
 
@@ -132,6 +132,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 1;
+  width: 46ch;
+  text-align: left;
 }
 
 .header__p {
@@ -181,7 +183,6 @@
 }
 
 @media (max-width: 600px) {
-  
   .video-bg {
     display: none;
   }
@@ -192,7 +193,6 @@
 }
 
 @media (max-width: 768px) {
-  
   .video-bg {
     display: none;
   }

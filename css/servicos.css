@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 2rem;
+  padding: 3rem 0;
   background-color: var(--cor-verde);
   border-bottom: 2px solid var(--cor-cobre);
 }
@@ -13,7 +13,6 @@
   border-radius: 8px;
   color: var(--cor-branca);
   padding: 0.5rem 1rem;
-  background: var(--gradiente-principal);
   text-align: center;
   margin: 0 0 2rem;
   text-transform: uppercase;
@@ -21,7 +20,7 @@
 }
 
 .servicos__accordion {
-  width: 90%;
+  width: 100%;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -55,9 +54,9 @@
   height: 32px;
 }
 
-.servicos__icon:hover {
+.servico__head:hover .servicos__icon {
   filter: invert(1);
-  transition: invert 1s ease-in-out;
+  transition: filter 0.5s ease-in-out;
 }
 
 .servico__type:hover {
