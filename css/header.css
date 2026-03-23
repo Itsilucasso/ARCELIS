@@ -201,4 +201,12 @@
     display: block;
   }
 }
+
+@media (max-width: 1024px) {
+  .typewriter {
+    width: unset;
+    text-align: center;
+    min-height: 128px;
+  }
+}
 /*section header*/
