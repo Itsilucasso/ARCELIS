@@ -7,7 +7,6 @@
 @import url("./footer.css");
 @import url("./js.css");
 
-
 @font-face {
   font-family: "Montserrat";
   src: url("../fontes/Montserrat/Montserrat-VariableFont_wght.woff2");
@@ -21,6 +20,7 @@
   --cor-cobre: #c68346;
   --cor-verde: #06402b;
   --cor-grafite: #4a4a4a;
+  --cor-cinza-claro: #aaaaaa;
   --gradiente-principal: linear-gradient(
     90deg,
     rgba(6, 64, 43, 1) 0%,

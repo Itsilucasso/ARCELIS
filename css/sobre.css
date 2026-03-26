@@ -23,7 +23,7 @@
 .sobre__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 1rem;
+  padding: 2rem;
   gap: 1rem;
   place-items: center;
   letter-spacing: 0.08em;
@@ -34,14 +34,44 @@
 .values {
   width: 100%;
   max-width: 700px;
+  text-align: justify;
+  padding: 1rem;
 }
+
+.sobre__arcelis {
+  border: 1px solid var(--cor-cinza-claro);
+  border-right: none;
+  border-radius: 10px;
+  
+}
+
+.corporate-card {
+  display: block;
+  max-width: 550px;
+  width: 100%;
+  height: auto;
+  justify-self: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 1px 5px 20px var(--cor-preta);
+  align-self: center;
+}
+
+/* .arcelis-texto {
+  padding: .5rem;
+  border: 1px solid var(--cor-cinza-claro);
+  border-radius: 10px;
+} */
 
 .card {
   margin-bottom: 1rem;
+  border: 1px solid var(--cor-cinza-claro);
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 .values__img {
   max-width: 700px;
+  width: 100%;
   border-radius: 8px;
 }
 

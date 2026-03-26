@@ -70,7 +70,7 @@
 }
 
 .contato__form {
-  border-left: 1px solid var(--cor-cobre);
+  /* border-left: 1px solid var(--cor-cobre); */
   padding: 1rem;
   background: var(--gradiente-background);
 }

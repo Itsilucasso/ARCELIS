@@ -1,6 +1,6 @@
 /*section header*/
 .header {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
