@@ -48,13 +48,17 @@
   left: 0;
   z-index: 9999;
   width: 100vw;
-  height: 100vh;
-  background-color: var(--cor-verde);
+  height: 200vh;
   width: 100%;
   height: 100vh;
   transition:
     opacity 1s ease,
     transform 1s ease-out;
+  /* From https://css.glass */
+  background: rgba(6, 64, 43, 0.549);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
 }
 
 #menu-hamburguer:checked + .label__menu {
@@ -88,15 +92,24 @@
   z-index: 9999;
 }
 
+.menu__li {
+  transition: transform 0.3s ease;
+}
+
+.menu__li:hover {
+  transform: scale(1.2);
+}
+
 .menu__nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: var(--cor-cobre);
+  color: var(--cor-branca);
   font-size: 2rem;
-  border: 2px inset var(--cor-branca);
+  border: 3px inset var(--cor-cobre);
   border-radius: 20%;
+  transition: transform 1s ease;
 }
 
 .menu__nav img {
@@ -151,6 +164,7 @@
   text-decoration: none;
   border-radius: 5px;
   border: 1px solid var(--cor-verde);
+  font-weight: 500;
 }
 
 .header__btn:hover {

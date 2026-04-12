@@ -27,6 +27,7 @@
     padding: 1rem;
     border-radius: 8px;
     align-self: center;
+    font-weight: 500;
 }
 
 .video__texto a:hover {
