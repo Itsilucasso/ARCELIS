@@ -102,6 +102,8 @@
 .servico__body {
   padding: 1rem;
   background: var(--gradiente-background);
+  height: 500px;
+  overflow: auto;
 }
 
 .servico__text {
