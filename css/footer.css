@@ -2,7 +2,7 @@
 .footer {
   display: flex;
   flex-direction: column;
-  background: var(--cor-verde);
+  background: var(--cor-verde) url("../assets/watermark.svg") center / 210px no-repeat;
   color: var(--cor-branca);
   font-size: 12px;
   font-weight: 400;
