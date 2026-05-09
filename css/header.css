@@ -107,7 +107,7 @@
   text-decoration: none;
   color: var(--cor-branca);
   font-size: 2rem;
-  border: 3px inset var(--cor-cobre);
+  border: 1px inset var(--cor-cobre);
   border-radius: 20%;
   transition: transform 1s ease;
 }
