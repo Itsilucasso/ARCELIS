@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <video
         autoplay
         muted
@@ -93,7 +93,7 @@
           >Fale Conosco</a
         >
       </div>
-    </header>
+    </header> -->
 
     <main>
       <section class="video">
@@ -114,7 +114,7 @@
 
         <div class="servicos__accordion">
           <div class="servicos__grid">
-            <details class="servico__type" name="servicos__accordion">
+            <details class="servico__type" open>
               <summary class="servico__head reveal">
                 Diagnóstico Energético<img
                   class="servicos__icon reveal"
@@ -164,7 +164,7 @@
               </div>
             </details>
 
-            <details class="servico__type" name="servicos__accordion">
+            <details class="servico__type" open>
               <summary class="servico__head reveal">
                 Energia Solar<img
                   class="servicos__icon reveal"
@@ -204,7 +204,7 @@
             </details>
           </div>
           <div class="servicos__grid">
-            <details class="servico__type" name="servicos__accordion">
+            <details class="servico__type" open>
               <summary class="servico__head reveal">
                 Sistemas de Armazenamento e Backup
                 <img
@@ -240,7 +240,7 @@
               </div>
             </details>
 
-            <details class="servico__type" name="servicos__accordion">
+            <details class="servico__type" open>
               <summary class="servico__head reveal">
                 Mobilidade Elétrica<img
                   class="servicos__icon reveal"
@@ -275,8 +275,9 @@
               </div>
             </details>
           </div>
-          <div class="servico__iluminacao">
-            <details class="servico__type" name="servicos__accordion">
+
+          <div class="servicos__grid">
+            <details class="servico__type" open>
               <summary class="servico__head reveal">
                 Iluminação<img
                   class="servicos__icon reveal"
@@ -306,7 +307,31 @@
                 </div>
               </div>
             </details>
+
+            <details class="servico__type" open>
+              <summary class="servico__head reveal">
+                Condicionamento Ambiental<img
+                  class="servicos__icon reveal"
+                  src="./assets/solarp1.svg"
+                  alt="Ícone de diagnóstico energético"
+                />
+              </summary>
+              <div class="servico__body">
+                <div class="servico__text reveal">
+                  <img
+                    class="servico__img-float reveal"
+                    src="./assets/img02.webp"
+                    alt="Painéis solares sendo instalados"
+                  />
+                  <p>
+                    LOREM IPSUM
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+                  </p>
+                </div>
+              </div>
+            </details>
           </div>
+
         </div>
       </section>
 
@@ -380,7 +405,7 @@
                 operacional.
               </p>
             </article>
-            <article class="card-img reveal">
+            <!-- <article class="card-img reveal">
               <div class="sobre__card-value">
                 <img
                   class="values__img"
@@ -388,7 +413,7 @@
                   alt="imagem enumerando os 5 valores da arcelis"
                 />
               </div>
-            </article>
+            </article> -->
           </div>
         </div>
       </section>

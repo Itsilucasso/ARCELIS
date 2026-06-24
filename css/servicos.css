@@ -36,11 +36,6 @@
   align-items: start;
 }
 
-.servico__iluminacao {
-  width: 60%;
-  align-self: center;
-}
-
 .servico__type {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -225,12 +220,6 @@
     width: 95%;
     gap: 1rem;
   }
-
-  /* .servico__type:hover {
-    background: inherit;
-    color: inherit;
-    transform: none;
-  } */
 
   .servico__head {
     width: 100%;
