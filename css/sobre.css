@@ -2,10 +2,11 @@
 .sobre {
   text-align: justify;
   hyphens: auto;
-  background-image: url("../assets/arcelis2.png");
-  background-size: 700px;
+  background-image: url("../assets/watermark2.svg");
+  background-attachment: fixed;
+  background-size: 200px;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   overflow: hidden;
 }
 
