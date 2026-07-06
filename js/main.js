@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   /* TYPEWRITER */
   const type = document.querySelector(".typewriter");
 
@@ -16,15 +15,17 @@ document.addEventListener("DOMContentLoaded", () => {
     write();
   }
 
-
   /* REVEAL */
   const reveals = document.querySelectorAll(".reveal");
   const detalhes = document.querySelectorAll(".servico__type");
 
-  reveals.forEach(el => {
-
-    if (["from-left","from-right","from-top","from-bottom"]
-      .some(c => el.classList.contains(c))) return;
+  reveals.forEach((el) => {
+    if (
+      ["from-left", "from-right", "from-top", "from-bottom"].some((c) =>
+        el.classList.contains(c),
+      )
+    )
+      return;
 
     const servico = el.closest(".servicos__grid");
 
@@ -34,9 +35,15 @@ document.addEventListener("DOMContentLoaded", () => {
       const text = el.closest(".servicos__text");
 
       el.classList.add(
-        title ? (reverse ? "from-right" : "from-left") :
-        text ? (reverse ? "from-left" : "from-right") :
-        "from-bottom"
+        title
+          ? reverse
+            ? "from-right"
+            : "from-left"
+          : text
+            ? reverse
+              ? "from-left"
+              : "from-right"
+            : "from-bottom",
       );
 
       return;
@@ -46,44 +53,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (sobre) {
       el.classList.add(
-        el.closest(".sobre__arcelis") ? "from-left" : "from-right"
+        el.closest(".sobre__arcelis") ? "from-left" : "from-right",
       );
       return;
     }
 
     el.classList.add("from-bottom");
-
   });
 
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
+        entry.target.classList.add("active");
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.2,
+      rootMargin: "0px 0px -10% 0px",
+    },
+  );
 
-      entry.target.classList.add("active");
-      observer.unobserve(entry.target);
-    });
-  },{
-    threshold: 0.2,
-    rootMargin: "0px 0px -10% 0px"
-  });
-
-  reveals.forEach(el => observer.observe(el));
-
+  reveals.forEach((el) => observer.observe(el));
 
   /* REANIMAÇÃO DO ACCORDION */
-  detalhes.forEach(detail => {
+  detalhes.forEach((detail) => {
     detail.addEventListener("toggle", () => {
-
       if (!detail.open) return;
 
-      detail.querySelectorAll(".reveal").forEach(el => {
+      detail.querySelectorAll(".reveal").forEach((el) => {
         el.classList.remove("active");
         void el.offsetWidth;
         el.classList.add("active");
       });
-
     });
   });
-
 });
+
+const bgDesktop = document.querySelector(".video-bg:not(.bgmobile) source");
+const bgMobile = document.querySelector(".video-bg.bgmobile source");

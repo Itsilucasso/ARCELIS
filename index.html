@@ -4,7 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Consultoria em Engenharia de Energia" />
-    <link rel="icon" href="favicon-verde.svg" type="image/svg+xml" preserveAspectRatio="none"/>
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Arcelis - Consultoria em Engenharia de Energia"
+    />
+    <meta
+      property="og:description"
+      content="Soluções inteligentes para eficiência energética: diagnóstico, energia solar, armazenamento, mobilidade elétrica e mais."
+    />
+    <meta property="og:image" content="https://github.com/Itsilucasso/ARCELIS/blob/main/assets/ogimg.jpg" />
+    <meta property="og:url" content="https://itsilucasso.github.io/ARCELIS/" />
+    <meta property="og:locale" content="pt_BR" />
+    <link rel="icon" href="favicon-verde.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Arcelis</title>
   </head>
@@ -18,6 +30,7 @@
         playsinline
         poster="./assets/headerbgposter.webp"
         class="video-bg"
+        aria-hidden="true"
       >
         <source src="./assets/videobg-desktop-2.mp4" type="video/mp4" />
         Seu navegador não suporta vídeo em HTML5
@@ -29,6 +42,7 @@
         playsinline
         poster="./assets/headerbgposter.webp"
         class="video-bg bgmobile"
+        aria-hidden="true"
       >
         <source src="./assets/videobg-mobile.mp4" type="video/mp4" />
         Seu navegador não suporta vídeo em HTML5
@@ -40,7 +54,11 @@
           alt="Logo da empresa Arcelis"
         />
         <input type="checkbox" id="menu-hamburguer" />
-        <label for="menu-hamburguer" class="label__menu reveal"></label>
+        <label
+          for="menu-hamburguer"
+          class="label__menu reveal"
+          aria-label="Abrir menu de navegação"
+        ></label>
         <nav class="nav">
           <ul class="menu">
             <li class="menu__li">
@@ -103,8 +121,12 @@
             >Solicitar diagnóstico</a
           >
         </div>
-        <video class="video-player" controls>
-          <source src="./assets/videoEE.mp4" type="video/mp4" />
+        <video
+          class="video-player"
+          controls
+          controlsList="nodownload noplaybackrate"
+        >
+          <source src="./assets/videoarcelis.mp4" type="video/mp4" />
           Seu navegador não suporta vídeo.
         </video>
       </section>
@@ -228,7 +250,9 @@
                   </p>
                 </div>
                 <div class="servico__btn">
-                  <h4 class="servico__btn-title">Precisa de um orçamento técnico?</h4>
+                  <h4 class="servico__btn-title">
+                    Precisa de um orçamento técnico?
+                  </h4>
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
@@ -588,7 +612,7 @@
                 alt="icone de e-mail"
               />
               <p class="contato__arcelis-email reveal">
-                contatoarcelis@arcelis.com.br
+                ##########@###########.com.br
               </p>
             </div>
             <div class="contato__container-wpp reveal">
@@ -609,7 +633,7 @@
         <div class="contato__form">
           <h2>Deixe-nos entender a sua demanda:</h2>
           <form
-            action="https://formsubmit.co/contatoarcelis@arcelis.com"
+            action="https://formsubmit.co/#####@#######.com"
             method="post"
             autocomplete="on"
           >
@@ -620,7 +644,7 @@
             />
             <input type="hidden" name="_template" value="table" />
             <input type="text" name="_honey" style="display: none" />
-            <input type="hidden" name="_replyto" value="email" />
+            <input type="hidden" name="_replyto" value="#######@######.com" />
             <label for="name">Nome</label>
             <input
               id="name"
@@ -643,7 +667,7 @@
               name="phone"
               type="tel"
               pattern="[0-9]{11}"
-              placeholder="Seu telefone: 'DDD+99999-9999'"
+              placeholder="Seu telefone (somente números): '61999999999'"
               required
             />
             <label for="service">Dúvida/Solicitação</label>
@@ -666,9 +690,7 @@
       </div>
       <div>
         <p>Consultoria em engenharia de energia.</p>
-        <p>
-          Nossos serviços:     
-        </p>
+        <p>Nossos serviços:</p>
         <p>• Diagnóstico energético;</p>
         <p>• Energia fotovoltaica;</p>
         <p>• Armazenamento e backup de energia;</p>
