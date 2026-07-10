@@ -98,18 +98,13 @@ phone.addEventListener("input", (e) => {
   // Remove tudo que não for número
   let numbers = e.target.value.replace(/\D/g, "");
 
-  // Remove um 55 inicial caso o usuário digite
-  if (numbers.startsWith("55")) {
-    numbers = numbers.substring(2);
-  }
-
   // Limita a DDD + número (11 dígitos)
   numbers = numbers.slice(0, 11);
 
-  let formatted = "+55";
+  let formatted = "";
 
   if (numbers.length > 0) {
-    formatted += " (" + numbers.substring(0, 2);
+    formatted += "(" + numbers.substring(0, 2);
   }
 
   if (numbers.length >= 2) {
@@ -125,13 +120,6 @@ phone.addEventListener("input", (e) => {
   }
 
   e.target.value = formatted;
-});
-
-// Deixa o +55 aparecer quando o campo recebe foco
-phone.addEventListener("focus", () => {
-  if (phone.value === "") {
-    phone.value = "+55 ";
-  }
 });
 
 const bgDesktop = document.querySelector(".video-bg:not(.bgmobile) source");
