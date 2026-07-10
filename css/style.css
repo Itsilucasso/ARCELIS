@@ -38,6 +38,8 @@
   );
 }
 
+/* global-css */
+
 html {
   font-size: 18px;
   scroll-behavior: smooth;
@@ -91,3 +93,5 @@ section {
   );
   border-radius: 10px;
 }
+
+/* global-css */

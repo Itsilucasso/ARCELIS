@@ -1,4 +1,5 @@
 /*section contato*/
+
 .contato {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -35,10 +36,11 @@
   box-sizing: border-box;
 }
 
-.contato__container-email {
+.contato__moldura a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 
 .contato__container-email img {
@@ -46,8 +48,8 @@
   height: auto;
 }
 
-.contato__container-email p,
-.contato__container-wpp p {
+.contato__container-email a,
+.contato__container-wpp a {
   font-size: 20px;
   background: var(--gradiente-principal);
   background-clip: text;
@@ -156,4 +158,5 @@ textarea {
     border-top: 1px solid var(--cor-grafite);
   }
 }
+
 /*section contato*/

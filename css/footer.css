@@ -1,4 +1,5 @@
 /*footer*/
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -20,16 +21,26 @@
   gap: .5rem;
 }
 
-.footer__contato {
+.footer__contatos-links {
   display: inline-flex;
   align-items: center;
-  text-align: center;
-  justify-content: center;
-  gap: .5rem;
+  gap: 15px;
 }
 
-.footer p img {
-  width: 32px;
+.footer__contatos-links a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  gap: 8px;
+}
+
+.separador {
+  font-size: 25px;
+}
+
+.footer img {
+  width: 40px;
 }
 
 .dev {
@@ -45,4 +56,5 @@
   font-size: 18px;
   font-weight: bold;
 }
+
 /*section footer*/
